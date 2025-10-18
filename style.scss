@@ -10,6 +10,10 @@
   font-family: para1;
   src: url(./L0x5DF4xlVMF-BfR8bXMIjhLq38.woff2);
 }
+@font-face {
+  font-family: para2;
+  src: url(./Poppins-Regular\ \(1\).ttf);
+}
 
 * {
   margin: 0;
@@ -21,7 +25,7 @@ html,
 body {
   height: 100%;
   width: 100%;
-
+ color: white;
 }
 
 body {
@@ -39,22 +43,23 @@ section{
 
 main {
   width: 100%;
-  @include flex-item();
-  padding: 1rem;
+  @include flex-item(1.5rem);
   align-items: center;
 
 
-  section {
+  section.view1{
     width: 100%;
+    padding: 1rem;
     @include flex-item(1rem);
-
     .top {
       width: 100%;
-
+      height: auto;
 
       img {
         width: 100%;
         border-radius: 12px;
+        height: 100%;
+        object-fit: cover;
       }
     }
 
@@ -74,7 +79,7 @@ main {
 
 
       .text {
-       @include flex-item(0.7rem);
+       @include flex-item(1rem);
 
 
         h1 {
@@ -121,12 +126,157 @@ main {
       }
     }
   }
+  section.view2{
+    @include flex-item(2.2rem);
+    padding: 1rem;
+    width: 100%;
 
+
+    .top,.bottom{
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      
+
+      .element{
+        text-align: center;
+        @include flex-item(0.7rem);
+        font-family: title;
+
+        small{
+          opacity: 0.8;
+          font-size: 0.8rem;
+        }
+
+        h2{
+          font-size: 2.5rem;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  section.view3{
+      width: 100%;
+    padding: 1rem;
+    @include flex-item(1rem);
+    .top {
+      width: 100%;
+      height: auto;
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .bottom{
+      border-radius: 0.7rem;
+      background-color: rgb(29, 29, 29);
+      @include flex-item(3.7rem);
+      padding: 1.8rem;
+      
+      p{
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: para1;
+        
+      }
+
+      .text{
+        @include flex-item(1rem);
+
+
+        h1{
+          font-family: title;
+          text-transform: uppercase;
+          font-size: 2rem;
+          font-weight: 200;
+          color: rgb(211, 209, 209);
+        }
+
+        p{
+           line-height: 1.4;
+          font-size: 1rem;
+          color: gray;
+          font-family: para;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  section.view4{
+      width: 100%;
+    padding: 1rem;
+    @include flex-item(1rem);
+    .top {
+      width: 100%;
+      height: auto;
+
+      img {
+        width: 100%;
+        border-radius: 12px;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .bottom{
+      border-radius: 0.7rem;
+      background-color: rgb(29, 29, 29);
+      @include flex-item(3.7rem);
+      padding: 1.8rem;
+      
+      p{
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: para1;
+        
+      }
+
+      .text{
+        @include flex-item(1rem);
+
+
+        h1{
+          font-family: title;
+          text-transform: uppercase;
+          font-size: 2rem;
+          font-weight: 200;
+          color: rgb(211, 209, 209);
+        }
+
+        p{
+           line-height: 1.4;
+          font-size: 1rem;
+          color: gray;
+          font-family: para;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  section.view5{
+    width: 100%;
+    padding: 1rem;
+    .card{
+      border-radius:1rem ;
+      background-image: url(./images/person1.png);
+      aspect-ratio:1;
+      background-size: cover;
+    
+
+    .top{
+      padding: 1rem;
+      background-color: red;
+    }
+  }
+  }
 }
 @media(min-width:990px){
   main{
-
-      section{
+    
+    
+      section.view1{
         
         flex-direction: row;
         .top,
@@ -140,15 +290,65 @@ main {
 
 
             .text{
-              gap: 1.7rem;
+              gap: 1rem;
 
               h1{
-                font-size: 4rem;
+                font-size: 3.7rem;
                 line-height: 1.1;
               }
             }
           }
         }
+        section.view2{
+          flex-direction: row;
+        }
+          section.view3{
+           flex-direction: row-reverse;
+
+           .top,.bottom{
+            width: 50%;
+           }
+
+           .bottom{
+            padding: 4rem;
+            justify-content: space-between;
+
+            .paragraph{
+              display: flex;
+              gap:2rem;
+              
+              p{
+                line-height: 1.7;
+                width: 50%;
+                font-size: 1.2rem;
+              }
+            }
+           }
+          }
+          
+          section.view4{
+           flex-direction: row;
+            padding: 0 1rem;
+           .top,.bottom{
+            width: 50%;
+           }
+
+           .bottom{
+            padding: 4rem;
+            justify-content: space-between;
+
+            .paragraph{
+              display: flex;
+              gap:2rem;
+              
+              p{
+                line-height: 1.7;
+                width: 50%;
+                font-size: 1.2rem;
+              }
+            }
+           }
+          }
       }
 
 
