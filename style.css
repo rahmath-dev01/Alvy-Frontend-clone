@@ -39,7 +39,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.5rem;
   align-items: center;
 }
 main section.view1 {
@@ -119,23 +119,27 @@ main section.view2 {
   padding: 1rem;
   width: 100%;
 }
-main section.view2 .top, main section.view2 .bottom {
+main section.view2 .top,
+main section.view2 .bottom {
   display: flex;
   width: 100%;
   justify-content: space-around;
 }
-main section.view2 .top .element, main section.view2 .bottom .element {
+main section.view2 .top .element,
+main section.view2 .bottom .element {
   text-align: center;
   display: flex;
   flex-direction: column;
   gap: 0.7rem;
   font-family: title;
 }
-main section.view2 .top .element small, main section.view2 .bottom .element small {
+main section.view2 .top .element small,
+main section.view2 .bottom .element small {
   opacity: 0.8;
   font-size: 0.8rem;
 }
-main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
+main section.view2 .top .element h2,
+main section.view2 .bottom .element h2 {
   font-size: 2.5rem;
   font-weight: 700;
 }
@@ -239,19 +243,189 @@ main section.view4 .bottom .text p {
   font-family: para;
   font-weight: bold;
 }
+main section.team {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-start;
+}
+main section.team h1 {
+  font-family: title;
+  font-weight: 400;
+}
 main section.view5 {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   width: 100%;
   padding: 1rem;
 }
-main section.view5 .card {
+main section.view5 #card {
   border-radius: 1rem;
-  background-image: url(./images/person1.png);
-  aspect-ratio: 1;
+  width: 100%;
   background-size: cover;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: space-between;
+  padding: 1.2rem;
 }
-main section.view5 .card .top {
+main section.view5 #card .top {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+main section.view5 #card .icon,
+main section.view5 #card .bottom {
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  background-color: rgba(156, 151, 151, 0.432);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(205, 199, 199, 0.497);
+}
+main section.view5 #card .icon {
+  border-radius: 50%;
+}
+main section.view5 #card .bottom {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.1rem 1rem;
+}
+main section.view5 #card .bottom h4 {
+  font-family: title;
+  font-size: 1.3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+main section.view5 #card .bottom p {
+  font-size: 1rem;
+  font-family: para1;
+}
+main section.view5 .card1 {
+  background-image: url(./images/person1.jpg);
+}
+main section.view5 .card2 {
+  background-image: url(./images/person3.jpg);
+}
+main section.view5 .card3 {
+  background-image: url(./images/person2.jpg);
+}
+main section.view6 {
+  width: 100%;
   padding: 1rem;
-  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view6 .top {
+  width: 100%;
+  height: auto;
+}
+main section.view6 .top img {
+  width: 100%;
+  border-radius: 12px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main section.view6 .bottom {
+  border-radius: 0.7rem;
+  background-color: rgb(29, 29, 29);
+  color: rgb(208, 208, 208);
+  display: flex;
+  flex-direction: column;
+  gap: 3.7rem;
+  padding: 1.8rem;
+}
+main section.view6 .bottom p {
+  font-family: para1;
+  font-weight: 500;
+  opacity: 0.8;
+}
+main section.view6 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+main section.view6 .bottom .text h1 {
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: title;
+  line-height: 1.3;
+}
+main section.view6 .bottom a {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.6rem;
+  text-decoration: none;
+  color: rgb(216, 215, 215);
+}
+main section.view6 .bottom a span {
+  font-family: para1;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+main section.view6 .bottom a i {
+  background-color: rgb(44, 43, 43);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+main section.view7 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+main section.view7 .contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.1rem;
+  width: 100%;
+  padding: 1.8rem;
+  border-radius: 0.7rem;
+  background-color: rgb(206, 189, 99);
+}
+main section.view7 .contact-card .top {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  color: rgb(0, 0, 0);
+}
+main section.view7 .contact-card .top P {
+  font-family: para1;
+  font-weight: 500;
+}
+main section.view7 .contact-card .top h1 {
+  width: 100%;
+  font-family: title;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+main section.view7 .contact-card .bottom button {
+  width: 100%;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  font-family: para1;
+  font-size: 0.93rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  word-spacing: 0.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
 }
 
 @media (min-width: 990px) {
@@ -279,7 +453,8 @@ main section.view5 .card .top {
   main section.view3 {
     flex-direction: row-reverse;
   }
-  main section.view3 .top, main section.view3 .bottom {
+  main section.view3 .top,
+  main section.view3 .bottom {
     width: 50%;
   }
   main section.view3 .bottom {
@@ -299,7 +474,8 @@ main section.view5 .card .top {
     flex-direction: row;
     padding: 0 1rem;
   }
-  main section.view4 .top, main section.view4 .bottom {
+  main section.view4 .top,
+  main section.view4 .bottom {
     width: 50%;
   }
   main section.view4 .bottom {
@@ -314,5 +490,47 @@ main section.view5 .card .top {
     line-height: 1.7;
     width: 50%;
     font-size: 1.2rem;
+  }
+  main section.view5 {
+    flex-direction: row;
+  }
+  main section.view5 .card {
+    width: 30%;
+    aspect-ratio: 1/1.2;
+  }
+  main section.view6 {
+    flex-direction: row;
+  }
+  main section.view6 .top,
+  main section.view6 .bottom {
+    width: 50%;
+    justify-content: space-between;
+  }
+  main section.view6 .bottom {
+    padding: 3rem;
+  }
+  main section.view7 {
+    width: 100%;
+  }
+  main section.view7 .contact-card {
+    width: 100%;
+    padding: 3rem;
+    flex-direction: row;
+  }
+  main section.view7 .contact-card .top {
+    width: 70%;
+  }
+  main section.view7 .contact-card .top h1 {
+    font-size: 3.5rem;
+    line-height: 1.15;
+    font-weight: 600;
+  }
+  main section.view7 .contact-card .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-shrink: 2rem;
   }
 }/*# sourceMappingURL=style.css.map */
