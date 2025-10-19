@@ -428,7 +428,7 @@ main section.view7 .contact-card .bottom button {
   gap: 0.8rem;
 }
 
-@media (min-width: 990px) {
+@media (min-width: 960px) {
   main section.view1 {
     flex-direction: row;
   }
