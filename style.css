@@ -381,7 +381,7 @@ main section.view7 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 1rem;
+  padding: 0.3rem 1rem;
 }
 main section.view7 .contact-card {
   display: flex;
@@ -426,6 +426,40 @@ main section.view7 .contact-card .bottom button {
   justify-content: center;
   align-items: center;
   gap: 0.8rem;
+}
+main section.view8 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0.3rem 1rem;
+}
+main section.view8 .about {
+  background-color: rgb(29, 29, 29);
+  border-radius: 0.7rem;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  justify-content: space-between;
+}
+main section.view8 .about .top h1 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: title;
+}
+main section.view8 .about .bottom {
+  display: flex;
+  gap: 0.8rem;
+}
+main section.view8 .about .bottom .icon {
+  border-radius: 50%;
+  padding: 0.8rem;
+  background-color: rgba(156, 151, 151, 0.432);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  border: 1px solid rgba(205, 199, 199, 0.497);
 }
 
 @media (min-width: 960px) {
@@ -516,6 +550,7 @@ main section.view7 .contact-card .bottom button {
     width: 100%;
     padding: 3rem;
     flex-direction: row;
+    justify-content: space-between;
   }
   main section.view7 .contact-card .top {
     width: 70%;
@@ -532,5 +567,18 @@ main section.view7 .contact-card .bottom button {
     align-items: flex-end;
     justify-content: flex-end;
     flex-shrink: 2rem;
+  }
+  main section.view8 {
+    width: 100%;
+  }
+  main section.view8 .about {
+    padding: 3rem;
+    justify-content: space-between;
+  }
+  main section.view8 .about .top {
+    width: 100%;
+  }
+  main section.view8 .about .top h1 {
+    font-size: 3rem;
   }
 }/*# sourceMappingURL=style.css.map */

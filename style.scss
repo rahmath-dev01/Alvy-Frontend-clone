@@ -425,8 +425,8 @@ main {
 
   section.view7 {
     @include flex-item(1rem);
-    padding: 1rem;
-
+    padding: 0.3rem 1rem;
+    
 
     .contact-card {
       @include flex-item(2.1rem);
@@ -476,6 +476,45 @@ main {
 
         }
       }
+    }
+  }
+  section.view8{
+    width: 100%;
+    @include flex-item(1rem);
+    
+    padding: 0.3rem 1rem;
+    
+
+    .about{
+      background-color: rgb(29, 29, 29);
+      border-radius: 0.7rem;
+      width: 100%;
+      padding: 1.5rem;
+      @include flex-item(2.5rem);
+      justify-content: space-between;
+
+      .top h1{
+        font-size: 1.8rem;
+        font-weight: 400;
+        font-family: title;
+      }
+
+
+      .bottom{
+        display: flex;
+        gap: 0.8rem;
+
+      .icon{
+        border-radius: 50%;
+        padding: 0.8rem;
+        
+        background-color: rgba(156, 151, 151, 0.432);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(205, 199, 199, 0.497);
+        
+      }
+      }
+      
     }
   }
 }
@@ -598,6 +637,7 @@ main {
         width: 100%;
         padding: 3rem;
         flex-direction: row;
+        justify-content: space-between;
 
         .top {
           width: 70%;
@@ -615,6 +655,22 @@ main {
           align-items: flex-end;
           justify-content: flex-end;
           flex-shrink: 2rem;
+        }
+      }
+    }
+    section.view8 {
+      width: 100%;
+
+      .about{
+        padding: 3rem ;
+        justify-content:space-between;
+
+        .top{
+          width: 100%;
+
+          h1{
+            font-size: 3rem;
+          }
         }
       }
     }
